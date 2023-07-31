@@ -26,7 +26,7 @@ public class Rook extends ChessPiece {
 		// ABOVE
 		// Defines the value of the auxiliar position to the position of the piece, but
 		// one house above
-		position.setValues(position.getRow() - 1, position.getColumn());
+		position.setValues(this.position.getRow() - 1, this.position.getColumn());
 
 		// While the position still exists and there's no piece on this position
 		while (getBoard().positionExists(position) && !getBoard().thereIsAPiece(position)) {
